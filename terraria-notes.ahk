@@ -3,6 +3,21 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+`::
+{
+	WinGetPos, myWinX, myWinY, myWinSizeX, myWinSizeY, A
+	
+	foobar := 32
+	
+	MouseMove, (myWinSizeX/2 - foobar * 0), (myWinSizeY/2)
+	
+	send, {LButton down}
+	sleep, 100
+	send, {LButton up}
+	
+	return
+}
+
 1::
 {
 	WinGetPos, myWinX, myWinY, myWinSizeX, myWinSizeY, A
