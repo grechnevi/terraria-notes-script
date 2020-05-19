@@ -167,3 +167,18 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 	
 	return
 }
+
+=::
+{
+	WinGetPos, myWinX, myWinY, myWinSizeX, myWinSizeY, A
+	
+	foobar := 32
+	
+	MouseMove, (myWinSizeX/2 - foobar * 12), (myWinSizeY/2)
+	
+	send, {LButton down}
+	sleep, 100
+	send, {LButton up}
+	
+	return
+}
