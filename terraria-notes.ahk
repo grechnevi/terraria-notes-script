@@ -7,7 +7,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 {
 	WinGetPos, myWinX, myWinY, myWinSizeX, myWinSizeY, A
 	
-	foobar := 29,69
+	foobar := 30
 	
 	MouseMove, (myWinSizeX/2 - foobar * 1), (myWinSizeY/2)
 	
@@ -22,7 +22,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 {
 	WinGetPos, myWinX, myWinY, myWinSizeX, myWinSizeY, A
 	
-	foobar := 29,69
+	foobar := 30
 	
 	MouseMove, (myWinSizeX/2 - foobar * 2), (myWinSizeY/2)
 	
@@ -37,7 +37,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 {
 	WinGetPos, myWinX, myWinY, myWinSizeX, myWinSizeY, A
 	
-	foobar := 29,69
+	foobar := 30
 	
 	MouseMove, (myWinSizeX/2 - foobar * 3), (myWinSizeY/2)
 	
@@ -52,7 +52,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 {
 	WinGetPos, myWinX, myWinY, myWinSizeX, myWinSizeY, A
 	
-	foobar := 29,69
+	foobar := 30
 	
 	MouseMove, (myWinSizeX/2 - foobar * 4), (myWinSizeY/2)
 	
@@ -67,7 +67,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 {
 	WinGetPos, myWinX, myWinY, myWinSizeX, myWinSizeY, A
 	
-	foobar := 29,69
+	foobar := 30
 	
 	MouseMove, (myWinSizeX/2 - foobar * 5), (myWinSizeY/2)
 	
@@ -82,7 +82,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 {
 	WinGetPos, myWinX, myWinY, myWinSizeX, myWinSizeY, A
 	
-	foobar := 29,69
+	foobar := 30
 	
 	MouseMove, (myWinSizeX/2 - foobar * 6), (myWinSizeY/2)
 	
@@ -97,7 +97,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 {
 	WinGetPos, myWinX, myWinY, myWinSizeX, myWinSizeY, A
 	
-	foobar := 29,69
+	foobar := 30
 	
 	MouseMove, (myWinSizeX/2 - foobar * 7), (myWinSizeY/2)
 	
@@ -112,7 +112,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 {
 	WinGetPos, myWinX, myWinY, myWinSizeX, myWinSizeY, A
 	
-	foobar := 29,69
+	foobar := 30
 	
 	MouseMove, (myWinSizeX/2 - foobar * 8), (myWinSizeY/2)
 	
@@ -127,7 +127,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 {
 	WinGetPos, myWinX, myWinY, myWinSizeX, myWinSizeY, A
 	
-	foobar := 29,69
+	foobar := 30
 	
 	MouseMove, (myWinSizeX/2 - foobar * 9), (myWinSizeY/2)
 	
@@ -142,7 +142,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 {
 	WinGetPos, myWinX, myWinY, myWinSizeX, myWinSizeY, A
 	
-	foobar := 29,69
+	foobar := 30
 	
 	MouseMove, (myWinSizeX/2 - foobar * 10), (myWinSizeY/2)
 	
@@ -153,3 +153,17 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 	return
 }
 
+-::
+{
+	WinGetPos, myWinX, myWinY, myWinSizeX, myWinSizeY, A
+	
+	foobar := 30
+	
+	MouseMove, (myWinSizeX/2 - foobar * 11), (myWinSizeY/2)
+	
+	send, {LButton down}
+	sleep, 100
+	send, {LButton up}
+	
+	return
+}
