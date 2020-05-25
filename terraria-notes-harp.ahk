@@ -3,7 +3,7 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-MoveToNote(ByRef button, ByRef myWinSizeX, ByRef myWinSizeY)
+MoveToNote(ByRef button)
 {
 	direction := 1  ; 1, -1
 	pixels := 32
