@@ -6,7 +6,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 MoveToNote(ByRef button)
 {
 	direction := -1  ; 1, -1
-	pixels := 48
+	pixels := 64
 	invert := "NO" ; YES, NO
 	
 	WinGetPos, myWinX, myWinY, myWinSizeX, myWinSizeY, A
@@ -59,6 +59,14 @@ PlayNote()
 5::
 {
 	MoveToNote(4)
+	PlayNote()
+	
+	return
+}
+
+6::
+{
+	MoveToNote(5)
 	PlayNote()
 	
 	return
